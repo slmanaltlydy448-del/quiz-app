@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-box">
+<div class="logo">
+<img src="5805160166616403426.jpg" alt="">
+</div>
+
+<div class="welcome-screen" id="welcome">
+<h1>Welcome to Elite Questions</h1>
+<button onclick="startApp()">ابدأ الآن</button>
+</div>
+
+<div class="buttons-container">
+<button onclick="startQuiz('sport')">⚽ كورة</button>
+<button onclick="startQuiz('islamic')">🕌 إسلامية</button>
+<button onclick="startQuiz('general')">🧠 معلومات عامة</button>
+<button onclick="startQuiz('geo')">🌍 جغرافيا</button>
+
+</div>
+</div>
+
+<Script src="script.js"></Script>
+<script>
+function startQuiz(type){
+    localStorage.setItem("quizType", type);
+    window.location.href = "quiz.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl;
+}
+
+.quiz-box {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 500px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+#category-name {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+#level {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    background: #27ae60;
+}
+
+#question {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.options {
+    display: grid;
+    gap: 14px;
+}
+
+.options button {
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgb(145, 175, 245);
+}
+
+.options button:hover {
+    background: #f1c40f;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.main-box {
+    background: #194866;
+    width: 90%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    animation: slideUp 0.8s ease;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+    border: 5px solid rgb(43, 69, 87);
+    box-shadow: 0 0 25px #00c3ff;
+}
+
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+
+.category,
+.special-btn {
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background: #bbdefb;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover,
+.special-btn:hover {
+    background: #dddddd;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+.welcome-screen {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.welcome-screen h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.welcome-screen button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #2a5298;
+    color: white;
+    transition: 0.3s;
+}
+
+.welcome-screen button:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .buttons-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .main-box {
+        padding: 25px;
+        
+    }
+}
+.sport-btn {
+    background: linear-gradient(135deg, #0f9b0f, #00c853);
+    color: white;
+    border: none;
+}
+
+.sport-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #00ff88;
+}
