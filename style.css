@@ -51,7 +51,7 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    background: rgb(145, 175, 245);
+    background: rgb(135, 137, 140);
 }
 
 .options button:hover {
