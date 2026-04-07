@@ -189,10 +189,10 @@ const quizType = localStorage.getItem("quizType");
 const questions = allQuestions[quizType];
 
 let categoryNames = {
-sport: "⚽ كورة",
-islamic: "🕌 إسلامية",
-general: "🧠 معلومات عامة",
-geo: "🌍 جغرافيا"
+sport: "كورة",
+islamic: "إسلامية",
+general: "معلومات عامة",
+geo: "جغرافيا"
 };
 
 document.getElementById("category-name").innerText =
