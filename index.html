@@ -20,10 +20,10 @@
 </div>
 
 <div class="buttons-container">
-<button onclick="startQuiz('sport')">⚽ كورة</button>
-<button onclick="startQuiz('islamic')">🕌 إسلامية</button>
-<button onclick="startQuiz('general')">🧠 معلومات عامة</button>
-<button onclick="startQuiz('geo')">🌍 جغرافيا</button>
+<button onclick="startQuiz('sport')"> كورة</button>
+<button onclick="startQuiz('islamic')"> إسلامية</button>
+<button onclick="startQuiz('general')"> معلومات عامة</button>
+<button onclick="startQuiz('geo')"> جغرافيا</button>
 
 </div>
 </div>
@@ -35,6 +35,15 @@ function startQuiz(type){
     window.location.href = "quiz.html";
 }
 </script>
+<button class="support-btn" onclick="openSupport()">
+ الدعم الفني
+</button>
+<div id="supportBox" class="support-box">
+    <h3>الدعم الفني</h3>
+    <p>للاستفسارات أو المشاكل التقنية:</p>
+    <p>slmnaaltlydy@gmail.com</p>
+    <button onclick="closeSupport()">إغلاق</button>
+</div>
 
 </body>
 </html>
