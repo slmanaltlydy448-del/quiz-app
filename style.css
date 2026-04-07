@@ -112,11 +112,13 @@ body {
 }
 
 
+
 .buttons-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 35px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 25px;
+margin-bottom: 35px;
+
 }
 
 
@@ -210,4 +212,29 @@ button:active {
 .sport-btn:hover {
     transform: scale(1.07);
     box-shadow: 0 0 20px #00ff88;
+}
+.support-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, #00b894, #0984e3);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.support-box {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
